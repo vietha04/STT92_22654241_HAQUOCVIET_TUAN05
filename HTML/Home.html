@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <style>
+        #container{
+            background-image: url(../IMAGE/hero-bg.jpg);
+            width: 1490px;
+            height:740px;
+            padding-left:200px ;
+            min-width: 800px;
+        }
+    </style>
+</head>
+<body> 
+    <div id="container" class="img-fluid">
+        <nav class="navbar navbar-expand-xxl">
+            <div class="col-3">
+                <button type="button" class="btn bg-warning navbar-toggler " data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="" class="nav-link text-white fs-3" style="font-family:'Lucida Sans', 
+                'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, 
+                sans-serif;">Feare</a>
+            </div>
+            <div class="container-fluid">          
+                <ul class="navbar-nav">
+                    <div class="collapse navbar-collapse " id="menu">
+                        <ul class="navbar-nav text-uppercase">  
+                            <li class="nav-item ">
+                                <a href="./Home.html" class="nav-link text-white ">home</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="./menu.html" class="nav-link text-white">menu</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="./About.html" class="nav-link text-white">about</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="./Book.html" class="nav-link text-white pe-5 me-5 ">book table</a>
+                            </li> 
+                            <li class="nav-item">
+                                <div class="nav-item d-flex pt-1">
+                                    <a href="" class="nav-link text-white pt-1 pe-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width=16" height="20" fill="currentColor" class="bi bi-person-fill " viewBox="0 0 16 16">
+                                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="nav-link text-white  pt-1 px-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 
+                                            0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 
+                                            0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="nav-link text-white pt-1 px-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 
+                                            1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 
+                                            0 0 1 11 0"/>
+                                        </svg>
+                                    </a>
+                                    <button type="button" class="btn btn-warning   text-white rounded-5  px-3" data-bs-target="#modal" data-bs-toggle="modal"  >Order Online</button> 
+                                </div>    
+                            </li>
+                        </ul>
+                    </div> 
+                </ul>  
+            </div>    
+        </nav>
+        <div class="text-white justify-content-center pt-5 mt-5">
+            <h1 class="pt-5 mt-5">Fast Food Restaurant</h1>
+            <p class="text small">
+                Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. <br> Tempora ex 
+                doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+            </p>
+            <a href="" class="nav-link pt-3 ">
+                <button type="button" class="btn btn-warning  text-white rounded-5  px-4">Order Now</button></a>
+        </div>
+    </div>                
+</div>
+<div class="modal" id="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="h3 text-warning">Order</span>
+                <button class="btn btn-danger" data-bs-dismiss="modal">X</button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div >
+                        <label for="phone" class="form-label">Telephone</label>
+                        <input type="number" name="phone" id="phone" class=" text-start input-group-text border-warning w-100" required>
+                    </div>
+                    <div >
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" name="email" id="email" class="input-group-text text-start border-warning form-control w-100 " required>
+                    </div>
+                    <div class="input-group py-3">
+                        <input type="checkbox" name="check" id="check" class="form-check me-2" required>
+                        <label for="Check" class="form-check-label">Check me out</label>
+                    </div>
+                    <div class="modal-footer pt-3 ">
+                        <button type="submit" class="btn btn-warning" data-bs-toggle="dismiss">Order</button>
+                        <button type="button" data-bs-dismiss="modal" class="btn btn-warning">Close</button>
+                    </div>
+                </form>
+            </div> 
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
